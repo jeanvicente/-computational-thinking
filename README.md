@@ -51,16 +51,27 @@ int main()
 int main(void){
     float x,y,price;
     scanf("%f%f",&x,&y);
+    if(y==1)
+        y=4.00;
+    else if(y==2)
+        y=4.50;
+    else if(y==3)
+        y=5.00;
+    else if(y==4)
+        y=2.00;
+    else if(y==5)
+        y=1.50;
+        
     if(x==1)
-        price=y*4.00;
+        price=y+4.00;
     else if(x==2)
-        price=y*4.50;
+        price=y+4.50;
     else if(x==3)
-        price=y*5.00;
+        price=y+5.00;
     else if(x==4)
-        price=y*2.00;
+        price=y+2.00;
     else if(x==5)
-        price=y*1.50;
+        price=y+1.50;
     printf("Total: R$ %.2f\n",price);
     return 0;
 }
