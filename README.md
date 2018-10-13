@@ -145,13 +145,6 @@ int main()
     return 0;
 }
 /*1042 ACHEI OUTRA FORMA DE SOLUCIANAR */
-/******************************************************************************
-
-                            Online C Compiler.
-                Code, Compile, Run and Debug C program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
 
 #include <stdio.h>
 
@@ -186,6 +179,28 @@ int main()
   printf("\n");
   printf("%d\n%d\n%d\n", A, B,C);
       return 0;
+}
+/* questao 1043 */ 
+#include<stdio.h>
+int main()
+{
+   float A, B, C, area, perimetro ;
+
+    scanf("%f %f %f", &A, &B, &C);
+
+   if ((A < (float)(B+C)) && (B < (float)(A+C)) && (C < (float)(B+A)))
+    {
+        perimetro = A + B + C;
+        printf("Perimetro = %.1f\n",perimetro);
+
+
+    }
+   else
+    {
+        area= ((A + B) * C) / 2;
+        printf("Area = %.1f\n",area);
+    }
+    return 0;
 }
 
 
