@@ -144,4 +144,48 @@ int main()
     printf ("\n%d\n%d\n%d\n",A,B,C);
     return 0;
 }
+/*1042 ACHEI OUTRA FORMA DE SOLUCIANAR */
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{  int A, B, C;
+    int x,y,z;
+    int temp;
+    scanf( "%d %d %d", &A, &B, &C );
+    x=A;
+    y=B;
+    z=C;
+    
+  if(x > y)
+    {
+    temp=x;
+    x=y;
+    y=temp;
+    }
+ if(z>y) 
+    {
+    temp=x;
+    x=z;
+    z=temp;
+    }
+ if(y>z)
+    {
+    temp=y;
+    y=z;
+    z=temp;
+    }
+  printf("%d\n%d\n%d\n", x, y ,z);
+  printf("\n");
+  printf("%d\n%d\n%d\n", A, B,C);
+      return 0;
+}
+
 
