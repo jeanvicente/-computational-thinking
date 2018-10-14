@@ -232,62 +232,53 @@ int main(){
 int main()
 {
     int a,b,c,d,x,y;
-    scanf("%d%d%d%d", &a, &x, &b, &y);
-    if(a == y && b == y && y == x)
+     scanf("%d%d%d%d", &a, &x, &b, &y);
+      if(a == y && b == y && y == x)
     {
         c =x-y;
         d =24+a-b;
-        printf( "O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c );
-    }
+      printf( "O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c );}
     else if(a==b && y>x)
     {
         c =y-x;
         d =a-b;
-        printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c );
-    }
+      printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c );}
     else if(a == b && x>y )
     {
         c =60-x+y;
         d =24-a+b-1;
-        printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c );
-    }
+      printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c );}
     else if(x==y && a<b)
     {
         c =0;
         d =b-a;
-        printf( "O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c );
-    }
+      printf( "O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c );}
     else if(x==y && a>b)
     {
         c =0;
         d =24-a+b;
-        printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c);
-    }
+     printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c);}
     else if(b>a && y>x)
     {
         c =y-x;
         d =b-a;
-        printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c );
-    }
+      printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c );}
     else if(a<b && x>y)
     { 
         c= 60-x+y;
         d= b-a-1;
-        printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c );
-    }
+      printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c );}
     else if(a>b && x<y)
     {
         c=y-x;
         d=24-a-1+b;
-        printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c);
-    }
+      printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c);}
     else if(a > b && x > y)
     { c= 60+y-x;
     d= 24+b-a-1;
-    printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c);
-    }
+     printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c);}
     return 0;
-}
+    }
 
    /*questao 1048*/
    #include<stdio.h>
@@ -296,86 +287,89 @@ int main()
  float n;
         scanf("%f", &n);
     if (n <= 400.0)
-         printf("Novo salário: %.2f\nReajuste ganho: %.2f\nEm percentual: 15 %%\n", n * 1.15, n * 0.15);
-         else if (n <= 800.0)
-         printf("Novo salário: %.2f\nReajuste ganho: %.2f\nEm percentual: 12 %%\n", n * 1.12, n * 0.12);
-         else if (n <= 1200.0)
-         printf("Novo salário: %.2f\nReajuste ganho: %.2f\nEm percentual: 10 %%\n", n * 1.10, n * 0.10);
-         else if (n <= 2000.0)
-         printf("Novo salário: %.2f\nReajuste ganho: %.2f\nEm percentual: 7 %%\n", n * 1.07, n * 0.07);
-         else
-         printf("Novo salário: %.2f\nReajuste ganho: %.2f\nEm percentual: 4 %%\n", n * 1.04, n * 0.04);
+     printf("Novo salário: %.2f\nReajuste ganho: %.2f\nEm percentual: 15 %%\n", n * 1.15, n * 0.15);
+       else if (n <= 800.0)
+     printf("Novo salário: %.2f\nReajuste ganho: %.2f\nEm percentual: 12 %%\n", n * 1.12, n * 0.12);
+       else if (n <= 1200.0)
+     printf("Novo salário: %.2f\nReajuste ganho: %.2f\nEm percentual: 10 %%\n", n * 1.10, n * 0.10);
+       else if (n <= 2000.0)
+     printf("Novo salário: %.2f\nReajuste ganho: %.2f\nEm percentual: 7 %%\n", n * 1.07, n * 0.07);
+       else
+     printf("Novo salário: %.2f\nReajuste ganho: %.2f\nEm percentual: 4 %%\n", n * 1.04, n * 0.04);
     return 0;
     }
+    
     /* questao 1050*/
     int main()
 {
    int N;
     scanf("%d",&N);
-    if(N==61)
-        printf("Brasilia\n");
-    else if(N==71)
-        printf("Salvador\n");
-    else if(N==11)
-        printf("São Paulo\n");
-    else if(N==21)
-        printf("Rio de Janeiro\n");
-    else if(N==32)
-        printf("Juiz de Fora\n");
-    else if(N==19)
-        printf("Campinas\n");
-    else if(N==27)
-        printf("Vitoria\n");
-    else if(N==31)
-        printf("Belo Horizonte\n");
-    else if(N==84)
-        printf("Rio grande do norte\n");
-    else if(N==85)
-        printf("Fortaleza\n");
-    else if(N==83)   
-        printf("joão pessoa\n");
-    else if(N==88)
-        printf("ceara\n");
-    else
-        printf(" DDD nao cadastrado\n");
+     if(N==61)
+  printf("Brasilia\n");
+     else if(N==71)
+  printf("Salvador\n");
+     else if(N==11)
+  printf("São Paulo\n");
+     else if(N==21)
+  printf("Rio de Janeiro\n");
+     else if(N==32)
+  printf("Juiz de Fora\n");
+     else if(N==19)
+  printf("Campinas\n");
+     else if(N==27)
+  printf("Vitoria\n");
+     else if(N==31)
+  printf("Belo Horizonte\n");
+     else if(N==84)
+  printf("Rio grande do norte\n");
+     else if(N==85)
+  printf("Fortaleza\n");
+     else if(N==83)   
+  printf("joão pessoa\n");
+     else if(N==88)
+  printf("ceara\n");
+     else
+  printf(" DDD nao cadastrado\n");
     return 0;
 }
+
 /* questao 1052*/
 #include<stdio.h>
 int main()
 {
     int N;
-    scanf("%d", &N);
-    switch (N)
-    {
+     scanf("%d", &N);
+      switch (N)
+{
     case 1:
-    printf("January\n");break;
+       printf("January\n");break;
     case 2:
-    printf("February\n");break;
+       printf("February\n");break;
     case 3:
-    printf("March\n");break;
+       printf("March\n");break;
     case 4:
-    printf("April\n");break;
+       printf("April\n");break;
     case 5:
-    printf("May\n");break;
+       printf("May\n");break;
     case 6:
-    printf("June\n");break;
+       printf("June\n");break;
     case 7:
-    printf("July\n");break;
+       printf("July\n");break;
     case 8:
-    printf("August\n");break;
+       printf("August\n");break;
     case 9:
-    printf("September\n");break;
+       printf("September\n");break;
     case 10:
-    printf("October\n");break;
+       printf("October\n");break;
     case 11:
-    printf("November\n");break;
+       printf("November\n");break;
     case 12:
-    printf("December\n");break;
+       printf("December\n");break;
     default:
         break;
     }
 }
+
 /*questao 1060*/
 #include <stdio.h>
 
@@ -383,12 +377,10 @@ int main()
 { int x;
   int p;
   int i;
-  
-  
   p = 0;
-  for(i = 1; i <= 6; i++){
-    scanf("%d, &x ");
-    if(x%2==0) p++;
+   for(i = 1; i <= 6; i++){
+ scanf("%d, &x ");
+     if(x%2==0) p++;
   }
 
     printf("%d numeros pares");
