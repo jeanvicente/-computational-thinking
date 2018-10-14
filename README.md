@@ -315,6 +315,39 @@ int main()
          printf("Novo salário: %.2f\nReajuste ganho: %.2f\nEm percentual: 4 %%\n", n * 1.04, n * 0.04);
     return 0;
     }
+    /* questao 1050*/
+    int main()
+{
+   int N;
+    scanf("%d",&N);
+    if(N==61)
+        printf("Brasilia\n");
+    else if(N==71)
+        printf("Salvador\n");
+    else if(N==11)
+        printf("São Paulo\n");
+    else if(N==21)
+        printf("Rio de Janeiro\n");
+    else if(N==32)
+        printf("Juiz de Fora\n");
+    else if(N==19)
+        printf("Campinas\n");
+    else if(N==27)
+        printf("Vitoria\n");
+    else if(N==31)
+        printf("Belo Horizonte\n");
+    else if(N==84)
+        printf("Rio grande do norte\n");
+    else if(N==85)
+        printf("Fortaleza\n");
+    else if(N==83)   
+        printf("joão pessoa\n");
+    else if(N==88)
+        printf("ceara\n");
+    else
+        printf(" DDD nao cadastrado\n");
+    return 0;
+}
     
    
 
