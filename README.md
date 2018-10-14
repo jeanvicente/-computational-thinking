@@ -31,7 +31,7 @@ int main()
                  }
     return 0;
                  }
-/*questao  1037*/#include <stdio.h>
+/*questao URI 1037*/#include <stdio.h>
 int main()
 { 
     double a;
@@ -48,7 +48,8 @@ int main()
         printf ("Intervalo (75,100]\n");
     return 0;
 }
-/* questao  1038*/
+
+/* questao URI 1038*/
 #include<stdio.h>
 int main(void)
 {
@@ -57,13 +58,13 @@ int main(void)
       if(y==1)
        y=4.00;
     else if(y==2)
-        y=4.50;
+       y=4.50;
     else if(y==3)
-        y=5.00;
+       y=5.00;
     else if(y==4)
-        y=2.00;
+       y=2.00;
     else if(y==5)
-        y=1.50;    
+       y=1.50;    
     if(x==1)
         price=y+4.00;
     else if(x==2)
@@ -77,75 +78,77 @@ int main(void)
     printf("Total: R$ %.2f\n",price);
   return 0;
 }
-/*questao 1040*/
+
+/*questao URI 1040*/
 #include <stdio.h>
 int main()
 {
     double N1, N2, N3, N4, N5, a,b;
-    scanf ("%lf%lf%lf%lf", &N1,&N2,&N3,&N4);
-    a=((N1*2)+(N2*3)+(N3*4)+N4)/10;
-    printf ("Media: %.1lf\n",a);
-    if(a>=7)
-        printf ("Aluno aprovado.\n");
-    else if(a<5)
-        printf("Aluno reprovado.\n");
+     scanf ("%lf%lf%lf%lf", &N1,&N2,&N3,&N4);
+      a=((N1*2)+(N2*3)+(N3*4)+N4)/10;
+      printf ("Media: %.1lf\n",a);
+        if(a>=7)
+      printf ("Aluno aprovado.\n");
+        else if(a<5)
+      printf("Aluno reprovado.\n");
     else if(a>=5&&a<=6.9)
     {
-        printf ("Aluno em exame.\n");
-        scanf("%lf", &N5);
+      printf ("Aluno em exame.\n");
+       scanf("%lf", &N5);
         printf ("Nota do exame: %.1lf\n",N5);
-        b=(N5+a)/2;
-        if(b>=5)
-            printf ("Aluno aprovado.\n");
-        else if(b<=4.9)
-            printf ("Aluno reprovado.\n");
-        printf ("Media final: %.1lf\n",b);
-    }
+         b=(N5+a)/2;
+          if(b>=5)
+        printf ("Aluno aprovado.\n");
+          else if(b<=4.9)
+        printf ("Aluno reprovado.\n");
+        printf ("Media final: %.1lf\n",b);  }
     return 0;
-}
-/* questao 1041 URI */
+   }
+   
+/* questao 1041 URI*/
 #include <stdio.h>
 int main()
 {
     double X,Y;
-    scanf ("%lf%lf", &X, &Y);
-    if(X==0&&Y==0) printf("Origem\n");
+     scanf ("%lf%lf", &X, &Y);
+      if(X==0&&Y==0) printf("Origem\n");
     else if(X==0) printf("Eixo Y\n");
     else if(Y==0) printf("Eixo X\n");
     else if(X>0&&Y>0) printf("Q1\n");
     else if(X<0&&Y>0) printf("Q2\n");
     else if(X<0&&Y<0) printf("Q3\n");
     else if(X>0&&Y<0) printf("Q4\n");
-    return 0;
+      return 0;
 }
 
-/* questao 1042* /
+/*questao URI 1042*/
+/* questao 1042*/
 #include <stdio.h>
 int main()
-{
+ {
     int A,B,C;
-    scanf ("%d%d%d", &A,&B,&C);
-    if(A<B&&A<C)
-    {
+     scanf ("%d%d%d", &A,&B,&C);
+      if(A<B&&A<C)
+ {
         if(B<C)
-            printf("%d\n%d\n%d\n",A,B,C);
+             printf("%d\n%d\n%d\n",A,B,C);
         else printf("%d\n%d\n%d\n",A,C,B);
     }
-    if(B<A&&B<C)
+      if(B<A&&B<C)
     {
         if(A<C)
-            printf("%d\n%d\n%d\n",B,A,C);
-        else printf("%d\n%d\n%d\n",B,C,A);
+          printf("%d\n%d\n%d\n",B,A,C);
+           else printf("%d\n%d\n%d\n",B,C,A);
     }
-    if(C<B&&C<A)
+     if(C<B&&C<A)
     {
-        if(B<A)
-            printf("%d\n%d\n%d\n",C,B,A);
+     if(B<A)
+          printf("%d\n%d\n%d\n",C,B,A);
         else printf("%d\n%d\n%d\n",C,A,B);
     }
-    printf ("\n%d\n%d\n%d\n",A,B,C);
+          printf ("\n%d\n%d\n%d\n",A,B,C);
     return 0;
-}
+ }
 /*1042 ACHEI OUTRA FORMA DE SOLUCIANAR */
 
 #include <stdio.h>
@@ -158,65 +161,53 @@ int main()
     x=A;
     y=B;
     z=C;
-    
   if(x > y)
-    {
-    temp=x;
-    x=y;
-    y=temp;
-    }
+    {temp=x;
+     x=y;
+     y=temp;}
  if(z>y) 
-    {
-    temp=x;
-    x=z;
-    z=temp;
-    }
+    {temp=x;
+     x=z;
+     z=temp;}
  if(y>z)
-    {
-    temp=y;
-    y=z;
-    z=temp;
-    }
-  printf("%d\n%d\n%d\n", x, y ,z);
-  printf("\n");
-  printf("%d\n%d\n%d\n", A, B,C);
-      return 0;
+    {temp=y;
+     y=z;
+     z=temp;}
+      printf("%d\n%d\n%d\n", x, y ,z);
+      printf("\n");
+      printf("%d\n%d\n%d\n", A, B,C);
+ return 0;
 }
 /* questao 1043 */ 
 #include<stdio.h>
 int main()
 {
    float A, B, C, area, perimetro ;
-
     scanf("%f %f %f", &A, &B, &C);
-
    if ((A < (float)(B+C)) && (B < (float)(A+C)) && (C < (float)(B+A)))
     {
         perimetro = A + B + C;
-        printf("Perimetro = %.1f\n",perimetro);
-
-
-    }
+        printf("Perimetro = %.1f\n",perimetro);}
    else
     {
         area= ((A + B) * C) / 2;
-        printf("Area = %.1f\n",area);
-    }
+        printf("Area = %.1f\n",area);}
     return 0;
 }
-/*questao 1044*/
 
+/*questao 1044*/
 #include <stdio.h>
 
 int main()
 {
     int A,B;
-   scanf("%d %d",&A,&B) ;
-   if( B%A == 0 || A%B == 0)
-   {
+     scanf("%d %d",&A,&B) ;
+      if( B%A == 0 || A%B == 0)
+   { 
    printf("são multiplos:\n");}
-   else {
-       printf("não são multiplos:\n");}
+    else
+    {
+      printf("não são multiplos:\n");}
     return 0;
 }
 
