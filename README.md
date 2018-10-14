@@ -384,6 +384,24 @@ int main()
         break;
     }
 }
+/*questao 1060*/
+#include <stdio.h>
+
+int main()
+{ int x;
+  int p;
+  int i;
+  
+  
+  p = 0;
+  for(i = 1; i <= 6; i++){
+    scanf("%d, &x ");
+    if(x%2==0) p++;
+  }
+
+    printf("%d numeros pares");
+    return 0;
+}
 
    
 
