@@ -12,20 +12,18 @@ int main()
       scanf("%d",&n);
        getchar();
         for(i = 0;i < n;i++)
-      {
-        gets(ch);
+      { 
+      gets(ch);
          l = strlen(ch);
           for(j=0;j<l;j++)
       { 
         if((ch[j]>='A' && ch[j]<='Z') || (ch[j]>='a' && ch[j]<='z'))ch[j] += 3;
-
                   }      
         p=l-1;
          for(j=0;j<l;j++) 
       {
             ch1[j]=ch[p];
-           p--;
-                  }
+           p--;   }
         ch1[j]='\0';
           for(j = l/2;j < l;j++)
             ch1[j] -= 1;
@@ -35,10 +33,10 @@ int main()
                  }
 /*questao  1037*/#include <stdio.h>
 int main()
-{
+{ 
     double a;
     scanf ("%lf",&a);
-    if(a<0||a>100)
+      if(a<0||a>100)
         printf ("Fora de intervalo\n");
     else if(a>=0&&a<=25)
         printf ("Intervalo [0,25]\n");
@@ -52,11 +50,12 @@ int main()
 }
 /* questao  1038*/
 #include<stdio.h>
-int main(void){
+int main(void)
+{
     float x,y,price;
-    scanf("%f%f",&x,&y);
-    if(y==1)
-        y=4.00;
+     scanf("%f%f",&x,&y);
+      if(y==1)
+       y=4.00;
     else if(y==2)
         y=4.50;
     else if(y==3)
@@ -64,8 +63,7 @@ int main(void){
     else if(y==4)
         y=2.00;
     else if(y==5)
-        y=1.50;
-        
+        y=1.50;    
     if(x==1)
         price=y+4.00;
     else if(x==2)
@@ -77,7 +75,7 @@ int main(void){
     else if(x==5)
         price=y+1.50;
     printf("Total: R$ %.2f\n",price);
-    return 0;
+  return 0;
 }
 /*questao 1040*/
 #include <stdio.h>
