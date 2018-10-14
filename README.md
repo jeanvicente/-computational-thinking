@@ -290,14 +290,31 @@ int main()
         printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c);
     }
     else if(a > b && x > y)
-    {
-        c= 60+y-x;
-        d= 24+b-a-1;
-        printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c);
+    { c= 60+y-x;
+    d= 24+b-a-1;
+    printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c);
     }
     return 0;
 }
 
-   /*questao 1047*/
+   /*questao 1048*/
+   #include<stdio.h>
+int main()
+{
+ float n;
+        scanf("%f", &n);
+    if (n <= 400.0)
+         printf("Novo salário: %.2f\nReajuste ganho: %.2f\nEm percentual: 15 %%\n", n * 1.15, n * 0.15);
+         else if (n <= 800.0)
+         printf("Novo salário: %.2f\nReajuste ganho: %.2f\nEm percentual: 12 %%\n", n * 1.12, n * 0.12);
+         else if (n <= 1200.0)
+         printf("Novo salário: %.2f\nReajuste ganho: %.2f\nEm percentual: 10 %%\n", n * 1.10, n * 0.10);
+         else if (n <= 2000.0)
+         printf("Novo salário: %.2f\nReajuste ganho: %.2f\nEm percentual: 7 %%\n", n * 1.07, n * 0.07);
+         else
+         printf("Novo salário: %.2f\nReajuste ganho: %.2f\nEm percentual: 4 %%\n", n * 1.04, n * 0.04);
+    return 0;
+    }
+    
    
 
