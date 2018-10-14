@@ -387,5 +387,17 @@ int main()
     return 0;
 }
 
-   
+/*questao */
+#include <stdio.h>
 
+int main()
+{
+    int a,X,c=0;
+    for(a=1;a<=5;a++)
+    {
+        scanf("%d", &X);
+        if(X%2==0) c+=1;
+    }
+    printf("%d valores pares\n",c);
+    return 0;
+}
