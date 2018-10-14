@@ -1,5 +1,6 @@
 # -computational-thinking
-QUESTIONS FROM THE COMPUTER THOUGHT LESSON "URI JUDGE"    /////QUESTÕES DA AULA DE PENSAMENTO COMPUTACIONAL "URI JUDGE"    1037 1038 1040 1041 1042 1043 1044 1046 1047 1048 1050 1052 1060 1065 10
+QUESTIONS FROM THE COMPUTER THOUGHT LESSON "URI JUDGE"    /////QUESTÕES DA AULA DE PENSAMENTO COMPUTACIONAL "URI JUDGE"    1037 1038 1040 1041 1042 1043 1044 1046 1047 1048 1050 1052 1060 1065 1024
+
 /* questao 1024 URI*/
 #include<stdio.h>
 #include<string.h>
@@ -218,4 +219,85 @@ int main()
     return 0;
 }
 
+/* questao 1046*/
+#include <stdio.h>
+
+    int tempo (int x, int y){
+        int t;
+        if(y <= x) y += 24;
+        t = y - x;
+        return t;
+    }
+int main(){
+    int inicial, final;
+    scanf("%d %d", &inicial, &final);
+    printf("o jogo durou %d horas(s) \n", tempo(inicial, final));
+    return 0;
+}
+/* questao 1047*/
+
+#include <stdio.h>
+int main()
+{
+    int a,b,c,d,x,y;
+    scanf("%d%d%d%d", &a, &x, &b, &y);
+    if(a == y && b == y && y == x)
+    {
+        c =x-y;
+        d =24+a-b;
+        printf( "O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c );
+    }
+    else if(a==b && y>x)
+    {
+        c =y-x;
+        d =a-b;
+        printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c );
+    }
+    else if(a == b && x>y )
+    {
+        c =60-x+y;
+        d =24-a+b-1;
+        printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c );
+    }
+    else if(x==y && a<b)
+    {
+        c =0;
+        d =b-a;
+        printf( "O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c );
+    }
+    else if(x==y && a>b)
+    {
+        c =0;
+        d =24-a+b;
+        printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c);
+    }
+    else if(b>a && y>x)
+    {
+        c =y-x;
+        d =b-a;
+        printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c );
+    }
+    else if(a<b && x>y)
+    { 
+        c= 60-x+y;
+        d= b-a-1;
+        printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c );
+    }
+    else if(a>b && x<y)
+    {
+        c=y-x;
+        d=24-a-1+b;
+        printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c);
+    }
+    else if(a > b && x > y)
+    {
+        c= 60+y-x;
+        d= 24+b-a-1;
+        printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", d, c);
+    }
+    return 0;
+}
+
+   /*questao 1047*/
+   
 
