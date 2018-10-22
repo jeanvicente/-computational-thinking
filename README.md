@@ -31,7 +31,8 @@ int main()
                  }
     return 0;
                  }
-/*questao URI 1037*/#include <stdio.h>
+/*questao URI 1037*/
+#include <stdio.h>
 int main()
 { 
     double a;
@@ -122,7 +123,6 @@ int main()
 }
 
 /*questao URI 1042*/
-/* questao 1042*/
 #include <stdio.h>
 int main()
  {
